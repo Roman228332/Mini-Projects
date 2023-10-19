@@ -6,7 +6,7 @@ for x in m:
 if len(a)==0:
     print('Таких чисел нет')
 else:
-    print(a)
+    print(sorted(a))
 
 
 
