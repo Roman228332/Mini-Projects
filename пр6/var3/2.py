@@ -1,4 +1,5 @@
-s = [1, 2, 3, 4, 5, 6, 17, 16]
+s = list(map(int, input().split()))
+
 for i in range(len(s)):
     if s[i] < 15:
         s[i] = s[i]*2 

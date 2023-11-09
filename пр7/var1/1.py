@@ -1,4 +1,3 @@
-
 def pryam(dlina, shirina):
     return dlina * shirina
 
