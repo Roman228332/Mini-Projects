@@ -1,12 +1,14 @@
-def f(n):
+def summa_cifr(n):
     r = 0
     while n > 0:
-        r += n % 10
+        r += (n % 10)
         n = n // 10
     return r
+
+
 c = int(input("Введите число: "))
-r = 0
+kolvo = 0
 while c > 0:
-    c -= f(c)
-    r += 1
-print(r)
+    c -= summa_cifr(c)
+    kolvo += 1
+print(kolvo)

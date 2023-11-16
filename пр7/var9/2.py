@@ -1,8 +1,14 @@
 import math
-print('Введите 3 массива чисел:')
-a = [int(p) for p in input().split()]
-b = [int(l) for l in input().split()]
-c = [int(f) for f in input().split()]
-print('Произведение 1 массива:', math.prod(a),' Среднее арифметическое 1 массива:', sum(a)/len(a))
-print('Произведение 2 массива:', math.prod(b),' Среднее арифметическое 2 массива:', sum(b)/len(b))
-print('Произведение 3 массива:', math.prod(c),' Среднее арифметическое 3 массива:', sum(c)/len(c))
+def proizved(n):
+    return math.prod(n)
+
+def srzn(m):
+    return (sum(m)/len(m))
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+c = list(map(int, input().split()))
+
+print('Произведение элементов первого массива:', proizved(a), '. Среднеарифметическое значение первого массива:', srzn(a))
+print('Произведение элементов второго массива:', proizved(b), '. Среднеарифметическое значение второго массива:', srzn(b))
+print('Произведение элементов третьего массива:', proizved(c), '. Среднеарифметическое значение третьего массива:', srzn(c))
