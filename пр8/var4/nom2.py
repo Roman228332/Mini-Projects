@@ -1,12 +1,19 @@
-a = [[1, -5, 7], [-3, -1, 4], [6, 9, 2]]
+matrica = [  [-45, 29, 13], 
+             [34, -95, 46], 
+             [67, 88, -19]    ]
+
+
+n = len(matrica)   #замена отрицательных элементов на 0 и положительных на 1
+for i in range(n):
+    for j in range(n):
+        if matrica[i][j] < 0:
+            matrica[i][j] = 0
+        else:
+            matrica[i][j] = 1
+
+
 for i in range(3):
     for j in range(3):
-        if a[i][j] > 0:
-            a[i][j] = 1
-        elif a[i][j] < 0:
-            a[i][j] = 0
-print()
-for i in range(3):
-    for j in range(3):
-        print(a[i][j], end=' ')
+        if j <= i:
+            print(matrica[i][j], end=' ')
     print()
