@@ -3,8 +3,7 @@ def prostota(n, delitel=2):
         return False
     if n % delitel == 0:
         return False
-    
-    if delitel * delitel > n:
+    if n < delitel * delitel:
         return True
     return prostota(n, delitel + 1)
 

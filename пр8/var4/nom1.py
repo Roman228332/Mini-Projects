@@ -9,7 +9,7 @@ for x in range(len(matrica)):   #проходит по элементам мат
     a.append(sum(matrica[x]))    #в список добавляется сумма подсписка
 
 
-print('строка с наимеьншей суммой элементов: ', matrica[a.index(min(a))])
+print('строка с наимеьншей суммой элементов: ', matrica[a.index(min(a))])  
 print('сумма элементов: ', min(a))
 
 

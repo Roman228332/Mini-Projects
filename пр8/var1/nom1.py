@@ -18,5 +18,5 @@ matrica = [  [1, 2, 3],
              [7, 8, 9]   ]
 
 sum_polozhit, kolvo_polozhit = summa_polozh_elementov(matrica)
-print("Сумма положительных элементов:", sum_polozhit)
-print("Кол-во положительных элементов:", kolvo_polozhit)
+print("сумма положительных элементов:", sum_polozhit)
+print("кол-во положительных элементов:", kolvo_polozhit)
